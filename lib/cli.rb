@@ -1,5 +1,3 @@
-require "pry"
-
 class CLI
 
     def call
@@ -14,7 +12,7 @@ class CLI
     end
 
     def list_gardens
-        Gardens.all.each.with_index(1) do | garden, i |
+        Garden.all.each.with_index(1) do | garden, i |
         puts "  #{i}. #{garden.title}"
         end
     end
@@ -23,15 +21,16 @@ class CLI
         puts ""
         puts "  Please choose a number for more info on a Botanical Garden:".yellow
         input = gets.chomp
-        if !input.to_i.between?(1, Gardens.all.count)
+        if !input.to_i.between?(1, Garden.all.count)
             list_gardens
             puts ""
             puts "  Sorry, garden not found, please select another from the list".red.bold
             puts ""
             pick_garden   
-        else  garden = Gardens.all[input.to_i-1]
+        else  
+            garden = Garden.all[input.to_i-1]
             puts ""
-            puts "------------------------------ #{garden.title} ------------------------------".magenta
+            puts "-------------------- #{garden.title} --------------------".magenta
             puts ""
             puts "#{garden.body}"
             puts ""
@@ -44,7 +43,7 @@ class CLI
         if another_garden == "y"
             list_gardens
             pick_garden
-        else input == "n"
+        else 
             puts "  When nature smiles, we all smile :) I hope you found what your looking for!".magenta
             exit
         end
