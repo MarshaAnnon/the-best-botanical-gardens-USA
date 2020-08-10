@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+require "pry"
+require "open-uri"
+require "nokogiri"
+require "colorize"
+require_relative "../lib/cli"
+require_relative "../lib/garden"
+require_relative "../lib/scraper"
+
+CLI.new.call
