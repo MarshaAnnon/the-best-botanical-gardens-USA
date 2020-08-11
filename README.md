@@ -11,14 +11,16 @@ This project was completed as part of Flatiron School's Software Engineering cou
 ![gif](https://i.imgur.com/dRUHjnD.gif)
 
 ## Installation:
-
-``` 
+ 
 Clone this repository, then:
 
+```
 ~ cd best-botanical-gardens-USA
+```
 
 Then execute:
 
+```
 ~ ./bin/garden
 ```
 
