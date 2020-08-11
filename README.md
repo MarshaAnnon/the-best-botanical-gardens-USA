@@ -12,6 +12,7 @@ This project was completed as part of Flatiron School's Software Engineering cou
 
 ## Installation:
 
+``` 
 Clone this repository, then:
 
 ~ cd best-botanical-gardens-USA
@@ -19,11 +20,14 @@ Clone this repository, then:
 Then execute:
 
 ~ ./bin/garden
+```
 
 ## Built With:
+```
 Ruby
 Nokogiri
 Open-URI
+```
 
 ## Project Plan
 
