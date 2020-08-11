@@ -6,6 +6,8 @@ This is a Command Line Interface that allows a users to access information on th
 
 This project was completed as part of Flatiron School's Software Engineering course.
 
+![gif](https://i.imgur.com/dRUHjnD.gif)
+
 Installing:
 
 Clone this repository, then:
@@ -45,7 +47,7 @@ Project Plan
 
 7,  Room for improvement
         a, better error handling with custom messages
-        b, botanical gradens by state or region (N,E,S,W)
+        b, botanical gardens by state or region (N,E,S,W)
         c, add links to individual botanical gardens for more info
         d, colorize/beautify
     
